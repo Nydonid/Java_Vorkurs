@@ -1,7 +1,14 @@
 public class Calculator {
-    double y;
-    public double operation (double x, String op) {
-        if (String op.equals)
-        return x += x;
+    static String opSign = "";
+
+    public static double operation() {
+        return switch (opSign) {
+            case "+" -> Stack.pop() + Stack.pop();
+            case "-" -> Stack.pop() - Stack.pop();
+            case "*" -> Stack.pop() * Stack.pop();
+            case "/" -> Stack.pop() / Stack.pop();
+            default -> 404.404;
+        };
     }
+
 }

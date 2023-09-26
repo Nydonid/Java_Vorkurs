@@ -8,27 +8,19 @@ public class Main {
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("End the operation with 'Q': ");
-        while (true) {
-            System.out.println("Enter a number to begin the operation, and the second after your operation: ");
+            System.out.println("Enter a number to begin the operation: ");
             stack.push(scanner.nextDouble());
+            System.out.println("And the second value of your operation: ");
             stack.push(scanner.nextDouble());
-            System.out.println("Enter your operation attribute (+,-,*,/): ");
-            String op = scanner.nextLine();
-            stack.pop(0);
-            stack.pop(1);
-            calculator.operation(op);
-            System.out.print;
-            stack.push(67);
-            stack.push(45);
-        }
+            System.out.println("Enter now the operation-sign of your operation: ");
+            calculator.opSign = scanner.nextLine();
 
+        System.out.println(Calculator.operation());
         //System.out.println(stack);
         //System.out.println("size " + stack.size(stack.x));
         //System.out.println("pop " + stack.pop(stack.x));
         //System.out.println("size " + stack.size(stack.x));
         //System.out.println(stack);
-
 
 
     }
